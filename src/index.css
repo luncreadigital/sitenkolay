@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-navy: #061428;
+  --color-navy-2: #0a1e3d;
+  --color-navy-3: #10284f;
+  --color-ink: #07111f;
+  --color-blue: #0066ff;
+  --color-blue-2: #1a7aff;
+  --color-blue-3: #4d94ff;
+  --color-ice: #f3f7fd;
+  --color-mist: #8ba0c0;
+  --color-line: #d7e3f5;
+}
+
+:root {
+  --navy: #061428;
+  --blue: #0066ff;
+  color-scheme: dark;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+}
+
+body {
+  margin: 0;
+  background: #061428;
+  color: #f4f7fb;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #0066ff;
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid #0066ff;
+  outline-offset: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #061428;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a3a6e;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0066ff;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.reference-grid {
+  background-image:
+    linear-gradient(rgba(0, 64, 160, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 64, 160, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 92%);
+}
+
+.reference-card:nth-child(6n + 2),
+.reference-card:nth-child(6n + 5) {
+  background: linear-gradient(135deg, rgba(235, 244, 255, 0.92), rgba(255, 255, 255, 0.96));
+}
+
+.reference-marquee {
+  animation: reference-marquee 42s linear infinite;
+}
+
+.reference-marquee-reverse {
+  animation: reference-marquee-reverse 48s linear infinite;
+}
+
+@keyframes reference-marquee {
+  to { transform: translateX(-50%); }
+}
+
+@keyframes reference-marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.mask-fade-b {
+  mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+}
+
+.mask-fade-l {
+  mask-image: linear-gradient(to right, transparent, black 18%, black 82%, transparent);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.28);
+  color: transparent;
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+@keyframes glow-shift {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate3d(4%, -3%, 0) scale(1.08);
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.floaty {
+  animation: floaty 6.5s ease-in-out infinite;
+}
+
+.glow-orb {
+  animation: glow-shift 10s ease-in-out infinite;
+}
+
+.logo-draw {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  animation: draw 1.15s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .has-cursor,
+  .has-cursor * {
+    cursor: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .floaty,
+  .glow-orb,
+  .logo-draw {
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
