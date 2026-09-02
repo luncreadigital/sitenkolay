@@ -1,0 +1,14 @@
+# Netlun · robots.txt
+# https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# Hassas / yardımcı dizinler taranmasın
+Disallow: /includes/
+Disallow: /config.php
+Disallow: /pages/
+Disallow: /*?*  # sorgu parametreli yinelenen URL'leri engelle (geriye dönük uyumluluk için kullanılır)
+
+# Arama motorlarına temiz sitemap göster
+Sitemap: https://www.sitenkolay.com.tr/sitemap.xml
