@@ -42,13 +42,13 @@ export function Process() {
             <div>
               <p className="text-xs tracking-[0.18em] text-white/45 uppercase">Web Sitesi</p>
               <p className="font-display mt-1 text-3xl font-semibold">
-                1000 TL <span className="text-base font-medium text-white/45">+ KDV</span>
+                1499 TL <span className="text-base font-medium text-white/45">+ KDV</span>
               </p>
             </div>
             <div className="border-l border-white/10 pl-8">
               <p className="text-xs tracking-[0.18em] text-white/45 uppercase">E-Ticaret Sitesi</p>
               <p className="font-display mt-1 text-3xl font-semibold">
-                2500 TL <span className="text-base font-medium text-white/45">+ KDV</span>
+                2499 TL <span className="text-base font-medium text-white/45">+ KDV</span>
               </p>
             </div>
           </div>

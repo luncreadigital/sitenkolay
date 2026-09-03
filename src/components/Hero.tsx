@@ -55,8 +55,8 @@ export function Hero({ onContact: _onContact }: { onContact: () => void }) {
             className="mt-7 max-w-lg text-base leading-relaxed text-white/65 md:text-lg"
           >
             Sade. Modern. Etkili. İhtiyacınız olan tüm özellikler tek pakette. Kurumsal web{" "}
-            <span className="text-white">1000 TL</span>, e-ticaret{" "}
-            <span className="text-white">2500 TL</span> — ek ödeme yok.
+            <span className="text-white">1499 TL + KDV</span>, e-ticaret{" "}
+            <span className="text-white">2499 TL + KDV</span> — ek ödeme yok.
           </motion.p>
 
           <motion.div
@@ -116,7 +116,7 @@ export function Hero({ onContact: _onContact }: { onContact: () => void }) {
             <div className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-white/10 bg-navy-2/90 px-4 py-3 backdrop-blur-md sm:block">
               <p className="text-[10px] tracking-[0.2em] text-mist uppercase">Web paketi</p>
               <p className="font-display text-2xl font-semibold tracking-tight">
-                1000 TL <span className="text-sm font-medium text-mist">+ KDV</span>
+                1499 TL <span className="text-sm font-medium text-mist">+ KDV</span>
               </p>
             </div>
             <div className="absolute -top-5 -right-2 hidden rounded-2xl border border-blue/30 bg-blue px-4 py-2 text-xs font-semibold sm:block">

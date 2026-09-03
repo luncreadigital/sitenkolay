@@ -27,7 +27,7 @@ export function Ecommerce({ onContact }: { onContact: () => void }) {
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-white/60">
             E-ticaret sitenizde sınırlarınızı kaldırın, daha fazla müşteriye ulaşın. Ürün yönetimi, güvenli ödeme
-            ve kargo — hepsi tek pakette, 2500 TL.
+            ve kargo — hepsi tek pakette, 2499 TL + KDV.
           </p>
           <button
             onClick={onContact}

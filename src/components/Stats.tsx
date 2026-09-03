@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { k: "1000 TL", v: "Kurumsal web’den başlayan net fiyat" },
-  { k: "2500 TL", v: "E-ticaret paketi, ek ücret yok" },
+  { k: "1499 TL", v: "Kurumsal web başlangıç fiyatı + KDV" },
+  { k: "2499 TL", v: "E-ticaret başlangıç fiyatı + KDV" },
   { k: "7/24", v: "Kesintisiz destek hattı" },
   { k: "%100", v: "Müşteri memnuniyeti odaklı teslim" },
 ];

@@ -93,8 +93,8 @@ export function Contact({
                   key={preset ?? "web"}
                   className="w-full rounded-2xl border border-white/10 bg-navy px-4 py-3.5 text-sm text-white outline-none focus:border-blue"
                 >
-                  <option value="web">Web Sitesi — 1000 TL</option>
-                  <option value="ecom">E-Ticaret — 2500 TL</option>
+                  <option value="web">Web Sitesi — 1499 TL + KDV</option>
+                  <option value="ecom">E-Ticaret — 2499 TL + KDV</option>
                   <option value="other">Emin değilim, danışmak istiyorum</option>
                 </select>
               </label>

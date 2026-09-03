@@ -18,7 +18,7 @@ export const packages = [
     id: "web",
     eyebrow: "Web Sitesi Paketi",
     name: "Kurumsal Web",
-    price: "1000",
+    price: "1499",
     badge: "Ek ödeme yok",
     desc: "Markanızı dijitalde güçlendirin. Kurumsal kimliğinize uygun, sade ve etkili bir web sitesi.",
     image: "/images/package-corporate-tr.png",
@@ -36,7 +36,7 @@ export const packages = [
     id: "ecom",
     eyebrow: "E-Ticaret Paketi",
     name: "E-Ticaret Sitesi",
-    price: "2500",
+    price: "2499",
     badge: "Ek ücret yok",
     desc: "Alışverişe yeni bir deneyim. Ürünlerinizi sergileyin, ödeme alın, kargoya bağlanın.",
     image: "/images/package-ecommerce-tr.png",
@@ -55,7 +55,7 @@ export const packages = [
 export const reasons = [
   {
     title: "Uygun Fiyat",
-    desc: "Şeffaf paketler. Gizli maliyet yok, ek ödeme yok. 1000 TL’den başlayan net fiyat.",
+    desc: "Şeffaf paketler. Gizli maliyet yok, ek ödeme yok. 1499 TL’den başlayan net fiyat.",
   },
   {
     title: "Profesyonel Tasarım",
